@@ -11,16 +11,72 @@
     <link rel="stylesheet" href="estilo1.css">
 </head>
 <style>
+    body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(133, 114, 133, 0.8)), url(assets/images/fondo5.jpg);
+  background-image: radial-gradient();
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
     h5{font-style: italic;
 
     }
     a{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 
     }
+    .card{
+	width: 500%;
+	margin: 30px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 200px;
+}
+.card .contenido-card{
+	padding: 20px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 20px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 2.0;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 40px;
+	margin-top: 20px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 10px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top text-center">
     <div class="container-fluid bg-dark fixed-top">
         <nav class="navbar navbar-expand-md navbar navbar-dark bg-dark container">
             <div class="container-fluid">
@@ -51,7 +107,7 @@
                         </li>
                     </ul>
                     <span class="navbar-text text-light px-3">
-                        <img src="assets/images/whatsapp-logo-24.png">
+                        <img src="https://img.icons8.com/fluency/48/000000/whatsapp.png "  alt="23" height="23"/>
                         55 2516 7727
                     </span>
                 </div>
@@ -181,7 +237,7 @@
 
         </div>
     </div>
-
+    
     <footer class="icon mt-2 mb-3 ">
         <div class="container text-center py-5">
             <div class="row">
@@ -189,11 +245,11 @@
                     <ul class="list-inline mb-3">
                     </h1>¡Realiza tu pedido en línea!</h1>
                         <p>Siguenos en nuestras redes sociales</p>
-                        <li class="list-inline-item lead mx-2"><a href=""><img src="assets/images/facebook.svg"
+                        <li class="list-inline-item lead mx-2"><a href="https://www.facebook.com" target="blank"><img src="assets/images/facebook.svg"
                                     class="img-fluid">Facebook</a></li>
-                        <li class="list-inline-item lead mx-2"><a href="cafe-ilia@hotmail.com"><img src="assets/images/instagram.svg"
+                        <li class="list-inline-item lead mx-2"><a href="https://www.instagram.com" target="blank"><img src="assets/images/instagram.svg"
                                     class="img-fluid">Instagram</a></li>
-                        <li class="list-inline-item lead mx-2"><a href="#"><img src="assets/images/youtube.svg"
+                        <li class="list-inline-item lead mx-2"><a href="https://www.youtube.com/watch?v=BhL6Fcfiyws" target="blank"><img src="assets/images/youtube.svg"
                                     class="img-fluid">You tube</a></li>
                     </ul>
                 </div>

@@ -11,12 +11,46 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <style>
-    a{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-
+    body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(199, 199, 199, 0.8), rgba(122, 122, 119, 0.8)), url(assets/images/pexels-andrea-piacquadio-948358.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
 }
+    a{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif }
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+
+.user-img img{
+    width: 40xp;
+    height: 40px;
+    box-shadow: 0px 0px 3px #faf7f7;
+    border-radius: 50%;
+}
+
+.form-group input{
+    height: 42px;
+    font-size: 18px;
+    border:10;
+    padding-left: 54px;
+    border-radius: 10px;
+}
+
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top:4px;
+}
+
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top text-center">
         <div class="container-fluid bg-dark fixed-top">
             <nav class="navbar navbar-expand-md navbar navbar-dark bg-dark container">
                 <div class="container-fluid">
@@ -47,7 +81,7 @@
                             </li>
                         </ul>
                         <span class="navbar-text text-light px-3">
-                            <img src="assets/images/whatsapp-logo-24.png">
+                            <img src="https://img.icons8.com/fluency/48/000000/whatsapp.png "  alt="23" height="23"/>
                             55 2516 7727
                         </span>
                     </div>
@@ -55,25 +89,27 @@
             </nav>
     </nav>
 
-<section class="container my-5">
+<section class="container py-5 my-5">
     <div class="row">
-        <div class="col-lg py-5">
-            <div class="card container border text-center mb-5" style="width: 16rem;">
-                <div class="card-body py-0">
+        <div class="col-lg-5 col-md-5  d-flex">
+            <div class="card  container row-cols-xl-12  row-cols-xl-12 text-center mb-5" style="width: 18rem;">
+                <div class="card-body row-cols-xl-4 col-lg-0 col-md-0">
                     <img src="assets/images/logo1cafe.jpg" class="card-img-top" alt="">
-                    <h2>Horario de servicio</h2>
-                    <p class="card-text"> Lunes – Viernes: 7am – 6pm
-                    <p class="card-text"> Sabado: 8am – 8pm
-                    <p class="card-text"> Domingo: 8am – 6pm
+                    <h2 class="font-weight-bold text-dark">Horario de servicio.</h2>
+                    <p class="card-text">Lunes – Viernes: 7am – 6pm</p>
+                    <p class="card-text"> Sabado: 8am – 8pm</p>
+                    <p class="card-text"> Domingo: 8am – 6pm</p>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="row py-5">
-            <div class="col-sm-5">
-                <div class="card container border text-center mb-5" style="width: 40rem;">
-                    <h2>¡Compra café bueno!</h2>
-                    <p class="lead text-muted">Ingresa tu dirección.</p>
+        
+        <div class="col-xl-7 col-lg-12 d-flex">
+            <div class="container  align-self-center p-7">
+                <div class="col-12 text-center user-img">
+                    <h2 class="font-weight-bold mb-3 text-center" >¡Compra café bueno!<img src="assets/images/cart-item-2.png" width="45" th:src="@{/img/user.png}"/>
+                </div>
+                <div class="form-group">
                     <form class="mt-6">
                         <div class="form-group">
                             <input type="text" class="form-control" id="" placeholder="Nombre del cliente">
@@ -82,13 +118,13 @@
                             <input type="email" class="form-control" id="" placeholder="Email/Direccion">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="" placeholder="Numero de telefono">
+                            <input type="tel" class="form-control" id="" placeholder="Numero de telefono">
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" id="" placeholder="¿Que desea ordenar?" rows="5"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-secondary">Enviar mensaje</button>
-                        <button type="submit" class="btn btn-secondary">Cancelar</button>
+                        <button type="submit" class="btn btn-secondary btn-success text-center">Enviar mensaje</button>
+                        <button type="submit" class="btn btn-secondary btn-success text-center">Cancelar</button>
                     </form>
                 </div>
             </div>
@@ -103,17 +139,18 @@
                 <ul class="list-inline mb-3">
                 </h1>¡Realiza tu pedido en línea!</h1>
                     <p>Siguenos en nuestras redes sociales</p>
-                    <li class="list-inline-item lead mx-2"><a href=""><img src="assets/images/facebook.svg"
+                    <li class="list-inline-item lead mx-2"><a href="https://www.facebook.com" target="blank"><img src="assets/images/facebook.svg"
                                 class="img-fluid">Facebook</a></li>
-                    <li class="list-inline-item lead mx-2"><a href="cafe-ilia@hotmail.com"><img src="assets/images/instagram.svg"
+                    <li class="list-inline-item lead mx-2"><a href="https://www.instagram.com" target="blank"><img src="assets/images/instagram.svg"
                                 class="img-fluid">Instagram</a></li>
-                    <li class="list-inline-item lead mx-2"><a href="#"><img src="assets/images/youtube.svg"
+                    <li class="list-inline-item lead mx-2"><a href="https://www.youtube.com/watch?v=BhL6Fcfiyws" target="blank"><img src="assets/images/youtube.svg"
                                 class="img-fluid">You tube</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
+
 
 
 

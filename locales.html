@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="estilo1.css">
 </head>
 <style>
+    body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.432), rgba(133, 114, 133, 0.8)), url(assets/images/pexels-samer-daboul-1627933.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
     h3{font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     }
@@ -20,9 +28,23 @@
 a{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 
     }
+
+    .map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top text-center">
         <div class="container-fluid bg-dark fixed-top">
             <nav class="navbar navbar-expand-md navbar navbar-dark bg-dark container">
                 <div class="container-fluid">
@@ -53,7 +75,7 @@ a{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
                             </li>
                         </ul>
                         <span class="navbar-text text-light px-3">
-                            <img src="assets/images/whatsapp-logo-24.png">
+                            <img src="https://img.icons8.com/fluency/48/000000/whatsapp.png "  alt="23" height="23"/>
                             55 2516 7727
                         </span>
                     </div>
@@ -61,20 +83,26 @@ a{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
             </nav>
     </nav>
 <section class="container my-5">
+   
     <!--Google maps 1-->
-    <div class="col-lg py-5">
+    
+    <div class="container-fluid" style="margin-top:80px">
+        <div class="map-responsive">
         <div id="map-container-google-1" class="z-depth-1-half map-container border text-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1907.2627490150333!2d-98.68545024441394!3d17.046929453002996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c9a64859a858ef%3A0x5ce6e40d23b72bdc!2sCaf%C3%A9%20ilia!5e0!3m2!1ses-419!2smx!4v1638307775138!5m2!1ses-419!2smx" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-            frameborder="0" style= "border:0; width:100%; height:420px"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"> frameborder="0" style= "border:0; width:100%; height:420px"
                 <allowfullscreen>
             </iframe>
-            <h3>Café Ilia</h3>
-            <p>¡Visitanos!</p>
+           
         </div>
+        </div>
+        <h3 class="text-center">Café Ilia</h3>
+        <p class="text-center">¡Visitanos!</p>
     </div>
+
     <!--Google maps 2-->
-    <div class="col-lg py-4">
+    <div class="container-fluid" style="margin-top:80px">
+        <div class="map-responsive">
     <div id="map-container-google-1" class="z-depth-1-half map-container border text-center">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486.3676519860808!2d-98.68679933131423!3d17.0460333994633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c9a7f08fcbc9a1%3A0xb79f3ec84ed44fdc!2sCAFE%20CORAZON%20DE%20LA%20MONTA%C3%91A!5e0!3m2!1ses!2smx!4v1638193534559!5m2!1ses!2smx"
@@ -83,11 +111,15 @@ a{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
             frameborder="0" style= "border:0; width:100%; height:420px"
             <allowfullscreen>
         </iframe>
-        <h3>Café Corazon de la Montaña 1</h3>
-        <p>¡Vuelve pronto!</p>
+      
     </div>
+</div>
+<h3 class="text-center">Café Corazon de la Montaña 1</h3>
+<p class="text-center">¡Vuelve pronto!</p>
+</div>
     <!--Google maps 3-->
-    <div class="col-lg py-4"></div>
+    <div class="container-fluid" style="margin-top:80px">
+        <div class="map-responsive">
     <div id="map-container-google-1" class="z-depth-1-half map-container border text-center">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.582852513403!2d-98.68623394883126!3d17.04411965906296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c9a7f08fcbc9a1%3A0xb79f3ec84ed44fdc!2sCAFE%20CORAZON%20DE%20LA%20MONTA%C3%91A!5e0!3m2!1ses!2smx!4v1638156143204!5m2!1ses!2smx"
@@ -96,9 +128,12 @@ a{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
             frameborder="0" style= "border:0; width:100%; height:420px"
             <allowfullscreen>
         </iframe>
-        <h3>Café Corazon de la Montaña 2</h3>
-        <p>¡El mejor ambiente!</p>
+      
     </div>
+</div>
+<h3 class="text-center">Café Corazon de la Montaña 2</h3>
+<p class="text-center">¡El mejor ambiente!</p>
+</div>
 </section>
 
 <footer class="icon mt-2 mb-3 ">
@@ -108,17 +143,18 @@ a{ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
                 <ul class="list-inline mb-3">
                 </h1>¡Realiza tu pedido en línea!</h1>
                     <p>Siguenos en nuestras redes sociales</p>
-                    <li class="list-inline-item lead mx-2"><a href=""><img src="assets/images/facebook.svg"
+                    <li class="list-inline-item lead mx-2"><a href="https://www.facebook.com" target="blank"><img src="assets/images/facebook.svg"
                                 class="img-fluid">Facebook</a></li>
-                    <li class="list-inline-item lead mx-2"><a href="cafe-ilia@hotmail.com"><img src="assets/images/instagram.svg"
+                    <li class="list-inline-item lead mx-2"><a href="https://www.instagram.com" target="blank"><img src="assets/images/instagram.svg"
                                 class="img-fluid">Instagram</a></li>
-                    <li class="list-inline-item lead mx-2"><a href="#"><img src="assets/images/youtube.svg"
+                    <li class="list-inline-item lead mx-2"><a href="https://www.youtube.com/watch?v=BhL6Fcfiyws" target="blank"><img src="assets/images/youtube.svg"
                                 class="img-fluid">You tube</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
+
 
 
 
